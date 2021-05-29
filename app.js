@@ -43,13 +43,13 @@ const ui = new UI;
 //Modal Submit Location Event Listener
 document.getElementById('search-btn').addEventListener('click', function(e){
   let zipCode = document.getElementById('zip-input').value
-  sessionStorage.setItem('zipCode', zipCode);
+  localStorage.setItem('zipCode', zipCode);
 })
 
 //Page Load Event Listener
 window.addEventListener('DOMContentLoaded',()=>{ 
   //get zip code from session storage, search and display weather
-  zipCode = sessionStorage.getItem('zipCode');
+  zipCode = localStorage.getItem('zipCode');
   if (zipCode) {
   weather.getWeatherFromZip(zipCode)
   .then(weather => {
@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     })
     .catch(err => console.log(err));
     if (err = ("404 (Not Found")){
-      console.log("Can't find your location, try again");
+      alert("Can't find your location, try again");
     }
   }  
 })
