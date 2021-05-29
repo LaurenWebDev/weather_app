@@ -1,0 +1,46 @@
+body {
+  /*background-color: rgb(43, 43, 43);*/
+  background:  url(https://i.ibb.co/xMxpR0h/egy-rivera-Vk-VRSc-QUs-CA-unsplash2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; 
+  color: #333;
+  overflow: hidden;
+}
+
+.container {
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 5% auto;
+}
+
+.content {
+  padding: 1rem 2rem 4rem 2rem;
+}
+
+#modal1{
+  border-radius: 15px 15px 15px 15px;
+}
+
+button {
+  width: 50%; 
+}
+
+.modal-trigger {
+  margin-top: 1.5rem;
+}
+
+#temp-display {
+  margin-top: 0;
+  font-size: 10rem; 
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    max-width: 70%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

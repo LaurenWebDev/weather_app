@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css" integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ==" crossorigin="anonymous" />
+  
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's the Weather</title>
+</head>
+<body>
+  <main class="container white">
+      <div class="content"> 
+        <div>
+          <h3><span id="city-display"></span></h3>
+          <h5><span><i id="icon" class = "wi light-blue-text"></i></span> <span id="weather-descr"></span></h5>      
+        </div>
+
+        <div id="weather-display" class="center-align">                  
+          <h1 id="temp-display"></h1>          
+        </div>
+
+        <div  class="center-align">
+          <button id="geo-btn" class="waves-effect btn light-blue darken-1">My Location</button>
+        </div> 
+        
+        <div class="center-align">
+          <button data-target="modal1" class="waves-effect btn modal-trigger light-blue darken-1">Search Location</button>
+        </div>
+      </div>
+    
+
+
+    <!--Modal-->
+    <div id="modal1" class="modal center-align">
+      <div class="modal-content">
+        <h4>Search your location</h4>
+        <form>
+          <div class="input-field">
+            <input id="zip-input" type="search" placeholder="Enter your zip code" class="center" required>
+            <label class="label-icon" for="zip-code"><i class="material-icons">search</i></label>
+            <button id="search-btn" class="btn light-blue darken-1">Search</button>
+          </div>
+        </form>
+      </div>
+      
+      <div class="modal-footer">
+      
+      </div>
+    </div>
+  </main>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
