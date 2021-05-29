@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded',()=>{
     })
     .catch(err => console.log(err));
     if (err = ("404 (Not Found")){
-      alert("Can't find your location, try again");
+      console.log("Can't find your location, try again");
     }
   }  
 })
